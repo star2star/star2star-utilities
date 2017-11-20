@@ -1,5 +1,5 @@
-s2s-utilities
-=============
+star2star-utilities
+===================
 
 Introduction
 ------------
@@ -12,7 +12,7 @@ Installation
 Install the component using [NPM](https://www.npmjs.com/):
 
 ```sh
-$ npm install s2s-utilities --save
+$ npm install star2star-utilities --save
 ```
 
 Usage
@@ -21,7 +21,7 @@ Usage
 1.	Import module:
 
 ```js
-   import Utilities from 's2s-utilities';
+   import Utilities from 'star2star-utilities';
 
 ```
 
@@ -39,19 +39,6 @@ None
 History
 =======
 
-#### 04/05/2016 - Version 1.0.0
-
--	initial release with getProps() function
-
-#### 3/23/2017 - Version 1.0.1
-
--	React 15.4.2 update
-
 #### 11/20/2017 - Version 1.0.2
 
 -	changed to be a true utility
-
-License
--------
-
-[MIT License](http://opensource.org/licenses/MIT)
