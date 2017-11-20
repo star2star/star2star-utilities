@@ -1,0 +1,20 @@
+{
+  "name": "star2star-utilities",
+  "version": "1.0.2",
+  "description": "s2s utilities",
+  "main": "./index.js",
+  "scripts": {
+    "test": "mocha --timeout 5000"
+  },
+  "keywords": [],
+  "author": "James Schimmoeller",
+  "license": "Apache",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "mocha": "^4.0.1"
+  }
+}
