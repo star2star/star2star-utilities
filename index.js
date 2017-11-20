@@ -2,7 +2,13 @@
 const request = require('request-promise');
 const config = require('./config.json');
 
-
+/**
+* This function will get the endPoint from the config file
+*
+* @param env - environment to use default to prod
+* @param microservice - name of the microservice to getEndpoint
+* @return string - microservice uri base on parameters or undefined 
+*/
 const getEndpoint = (env="prod", microservice="NOTHING") =>{
   const upperMS = microservice.toUpperCase();
   const validEnvs = ['dev', 'test', 'stage', 'prod'];
@@ -312,14 +318,15 @@ const getValueFromObjectTree = (matchString="", objectTree={}) => {
   //console.log('bbbb', matchString, xReturn)
   return xReturn;
 }
+
 /**
-* This function will ask the cpaas data object service for a specific object
+* This function will find variables in the inputValue %<text>%
+* and replace them from the value from the objectTree
+* returning to you the new string
 *
-* @param apiKey - api key for cpaas systems
-* @param userUUID - user UUID to be used
-* @param identityJWT - identity JWT
-* @param dataObjectUUID - data object UUID
-* @returns data
+* @param inputValue - string that contains variables
+* @param objectTree - json object to search
+* @returns string
 **/
 const replaceVariables = (inputValue="", objectTree={}) => {
   // will search for %xxxxx%
