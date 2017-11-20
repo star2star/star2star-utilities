@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "James Schimmoeller",
   "license": "Apache",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
     "request": "^2.83.0",
     "request-promise": "^4.2.2"
